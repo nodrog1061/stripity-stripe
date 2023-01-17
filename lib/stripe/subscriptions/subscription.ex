@@ -160,7 +160,6 @@ defmodule Stripe.Subscription do
                optional(:prorate) => boolean,
                optional(:proration_behavior) => String.t(),
                optional(:promotion_code) => Stripe.id(),
-               optional(:tax_rate) => Stripe.id() | Stripe.TaxRate.t(),
                optional(:trial_end) => Stripe.timestamp() | :now,
                optional(:trial_from_plan) => boolean,
                optional(:trial_period_days) => non_neg_integer
